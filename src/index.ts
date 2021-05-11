@@ -1,2 +1,1 @@
-// import "./enum";
-import "./interface";
+import "./base/index";
