@@ -1,0 +1,2 @@
+// import "./enum";
+import "./interface";
