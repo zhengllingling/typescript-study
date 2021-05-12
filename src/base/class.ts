@@ -40,3 +40,44 @@ class Cat extends Animal {
         console.log("Cat running")
     }
 }
+
+
+interface Person {
+    name: String,
+    age: number
+}
+
+interface Girl extends Person{
+    singing():void
+}
+
+class Girl1 implements Girl {
+    constructor(name:string, age:number) {
+        this.name = name;
+        this.age = age;
+    }
+    name:string
+    age: number
+    singing(){
+
+    }
+}
+
+class Girl2 implements Person {
+    name: string
+    age: number
+    private singing():void{}
+}
+
+interface Girl3 extends Girl2 {
+
+}
+
+// class Girl4 implements Girl3{
+//     constructor() {
+        
+//     }
+//     name: string
+//     age: number
+//     singing(){}
+// }
